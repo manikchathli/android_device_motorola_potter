@@ -1,0 +1,3 @@
+add_lunch_combo XOS_potter-eng
+add_lunch_combo XOS_potter-userdebug
+add_lunch_combo XOS_potter-user
