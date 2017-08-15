@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/motorola/potter/potter-vendor.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+$(call inherit-product, vendor/cos/common.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
@@ -31,7 +31,7 @@ TARGET_SCREEN_HEIGHT := 1920
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := potter
-PRODUCT_NAME := aosp_potter
+PRODUCT_NAME := cos_potter
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 
@@ -39,3 +39,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=motorola/potter/potter:7.0/NPN25.137-67/75:user/release-keys \
     PRIVATE_BUILD_DESC="potter-7.0/NPN25.137-67/75:user/release-keys" \
     PRODUCT_NAME="Moto G5 Plus"
+
+#Official
+KBUILD_BUILD_HOST := Saturn
+KBUILD_BUILD_USER := Savitar
